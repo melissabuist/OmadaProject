@@ -14,7 +14,7 @@ public class SliderModal {
         // when using firebase
     }
 
-    // creating getter methods.
+    // creating the get methods.
     public String getTitle() {
         return title;
     }
@@ -27,7 +27,7 @@ public class SliderModal {
         return heading;
     }
 
-    // creating setter methods
+    // creating the set methods for the quotes, authors, and images
     public void setHeading(String heading) {
         this.heading = heading;
     }
@@ -40,7 +40,7 @@ public class SliderModal {
         this.imgUrl = imgUrl;
     }
 
-    // constructor for our modal class
+    // constructor for the modal class
     public SliderModal(String title, String heading, String imgUrl, int backgroundDrawable) {
         this.title = title;
         this.heading = heading;

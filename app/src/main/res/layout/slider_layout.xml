@@ -6,10 +6,9 @@
     android:layout_height="match_parent">
 
     <!--text view for displaying
-        our heading-->
+        our quote-->
 
-    <!--Image view for displaying
-        our slider image-->
+
 
     <TextView
         android:id="@+id/idTVtitle"
@@ -22,6 +21,8 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <!--Image view for displaying
+    our slider image-->
     <ImageView
         android:id="@+id/idIV"
         android:layout_width="305dp"
@@ -32,8 +33,8 @@
         android:padding="10dp"
         android:src="@mipmap/ic_launcher" />
 
-    <!--text view for displaying our
-        slider description-->
+    <!--text view for displaying the author of the quote - includes padding, color and extra
+    layout instructions-->
     <TextView
         android:id="@+id/idTVheading"
         android:layout_width="match_parent"

@@ -54,31 +54,27 @@ public class SliderAdapter extends PagerAdapter {
         // items and inflate our layout file as well.
         layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
 
-        // below line is use to inflate the
-        // layout file which we created.
+        // inflates the layout we created
         View view = layoutInflater.inflate(R.layout.slider_layout, container, false);
 
-        // initializing our views.
+        // initializing views.
         ImageView imageView = view.findViewById(R.id.idIV);
         TextView titleTV = view.findViewById(R.id.idTVtitle);
         TextView headingTV = view.findViewById(R.id.idTVheading);
         RelativeLayout sliderRL = view.findViewById(R.id.idRLSlider);
 
-        // setting data to our views.
+        // setting data to views.
         SliderModal modal = sliderModalArrayList.get(position);
         titleTV.setText(modal.getTitle());
         headingTV.setText(modal.getHeading());
         Picasso.get().load(modal.getImgUrl()).into(imageView);
 
-        // below line is to set background
-        // drawable to our each item
+        // setting background to a drawable
         sliderRL.setBackground(context.getResources().getDrawable(modal.getBackgroundDrawable()));
 
-        // after setting the data to our views we
-        // are adding the view to our container.
+        // adding the view to our container.
         container.addView(view);
 
-        // at last we are
         // returning the view.
         return view;
     }
@@ -86,7 +82,6 @@ public class SliderAdapter extends PagerAdapter {
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
         // this is a destroy view method
-        // which is use to remove a view.
         container.removeView((RelativeLayout) object);
     }
 }
