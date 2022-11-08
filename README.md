@@ -14,6 +14,9 @@ Run the project in Android Studios.
 
 
 
+Uploading Android Emulator - Pixel_4_XL_API_30_5554 2022-11-08 15-04-04.mp4…
+
+
 
 
 ## Technologies
